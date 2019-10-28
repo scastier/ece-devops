@@ -66,7 +66,12 @@ In the `infra-as-code` directory, you will find:
 1. Take a look at the [`Vagrantfile`](Vagrantfile) and at the YAML files [`playbooks/run.yml`](playbooks/run.yml) and [`playbooks/gitlab/install/tasks/main.yml`](playbooks/roles/gitlab/install/tasks/main.yml)
 2. Create and provision the VM
    1. Run the `vagrant up` command
-   2. Check that everything is ok by connecting to the VM through SSH:
+   2. You should end up with the following error (this is planned): 
+      ```shell
+      TASK [gitlab/install : Install GitLab] *****************************************
+      fatal: [gitlab_server]: FAILED! => {"changed": false, "msg": "No package matching 'gitlab-ee' found available, installed or updated", "rc": 126, "results": ["No package matching 'gitlab-ee' found available, installed or updated"]}
+      ```
+   3. Check that everything is ok by connecting to the VM through SSH:
       ```
       vagrant ssh gitlab_server
       ```

@@ -33,13 +33,13 @@
 # - name: Enable and start postfix
 #   COMPLETE HERE
 
-# - name: Download GitLab install script
+# - name: Download GitLab package script
 #   COMPLETE HERE
-#   TIP: Use the get_url module
+#   TIP: Use the get_url module to download the script.rpm.sh
 
-# - name: Execute GitLab install script
+# - name: Execute GitLab package script
 #   COMPLETE HERE
-#   TIP: Use the script module
+#   TIP: Use the script module to run the script.rpm.sh
 
 - name: Install GitLab
   yum:
