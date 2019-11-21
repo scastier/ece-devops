@@ -96,7 +96,7 @@ In the `infra-as-code` directory, you will find:
       $ curl http://127.0.0.1/-/health
       GitLab OK
       ```
-3. Read [`playbooks/roles/gitlab/healthcheck/tasks/main.yml`](playbooks/roles/gitlab/healthcheck/tasks/main.yml) to understand how it relates
+3. Read [`playbooks/roles/gitlab/healthchecks/tasks/main.yml`](playbooks/roles/gitlab/healthchecks/tasks/main.yml) to understand how it relates
 4. Run the `gitlab/healthcheck` role
    1. Connect to the VM using `vagrant ssh`
    2. Run the playbooks using the right tag (replace `TAG`):
